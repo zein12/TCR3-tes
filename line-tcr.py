@@ -76,7 +76,7 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
-admin=["YOUR_MID_HERE"]
+admin=["ucbc8a43ab2f3b1bd76b518400fa931c5"]
 wait = {
     'contact':True,
     'autoJoin':True,
@@ -92,7 +92,7 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":True,
-    "cName":"Chivas ",
+    "cName":"",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
