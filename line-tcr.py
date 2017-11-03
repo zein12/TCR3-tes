@@ -1942,12 +1942,12 @@ def bot(op):
 	                        cl.sendText(msg.to,str(e))
 	                    except:
 	                        pass			
-	  if op.type == 59:
-              print op
+        if op.type == 59:
+            print op
 	
 	
-       except Exception as error:
-	   print error
+     except Exception as error:
+	 print error
 	
 	
 	def a2():
