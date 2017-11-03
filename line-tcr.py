@@ -506,35 +506,35 @@ def bot(op):
             elif ("Gn " in msg.text):
 		if msg.from_ in admin:
                 	if msg.toType == 2:
-                    	X = cl.getGroup(msg.to)
-                    	X.name = msg.text.replace("Gn ","")
-                    	cl.updateGroup(X)
+                    		X = cl.getGroup(msg.to)
+                    		X.name = msg.text.replace("Gn ","")
+                    		cl.updateGroup(X)
                 	else:
-                    	cl.sendText(msg.to,"It can't be used besides the group.")
+                    		cl.sendText(msg.to,"It can't be used besides the group.")
             elif ("MJ1 gn " in msg.text):
 		if msg.from_ in admin:
                 	if msg.toType == 2:
-                    	X = cl.getGroup(msg.to)
-                    	X.name = msg.text.replace("MJ1 gn ","")
-                    	ki.updateGroup(X)
+                    		X = cl.getGroup(msg.to)
+                    		X.name = msg.text.replace("MJ1 gn ","")
+                    		ki.updateGroup(X)
                 	else:
-                    	ki.sendText(msg.to,"It can't be used besides the group.")
+                    		ki.sendText(msg.to,"It can't be used besides the group.")
             elif ("MJ2 gn " in msg.text):
                 if msg.from_ in admin:
 			if msg.toType == 2:
-                    	X = cl.getGroup(msg.to)
-                    	X.name = msg.text.replace("MJ2 gn ","")
-                    	kk.updateGroup(X)
+                    		X = cl.getGroup(msg.to)
+				X.name = msg.text.replace("MJ2 gn ","")
+				kk.updateGroup(X)
                 	else:
-                    	kk.sendText(msg.to,"It can't be used besides the group.")
+                    		kk.sendText(msg.to,"It can't be used besides the group.")
             elif ("MJ3 gn " in msg.text):
         	if msg.from_ in admin:    
 			if msg.toType == 2:
-                    	X = cl.getGroup(msg.to)
-                    	X.name = msg.text.replace("MJ3 gn ","")
-                    	kc.updateGroup(X)
+                    		X = cl.getGroup(msg.to)
+                    		X.name = msg.text.replace("MJ3 gn ","")
+                    		kc.updateGroup(X)
                 	else:
-                    	kc.sendText(msg.to,"It can't be used besides the group.")
+                    		kc.sendText(msg.to,"It can't be used besides the group.")
             elif "Kick " in msg.text:
 		if msg.from_ in admin:                
 			midd = msg.text.replace("Kick ","")
