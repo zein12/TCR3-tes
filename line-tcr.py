@@ -1845,8 +1845,9 @@ def bot(op):
 	                ki.sendText(msg.to,"send contact")
 	                kk.sendText(msg.to,"send contact")
 	                kc.sendText(msg.to,"send contact")
-	            elif msg.text in ["Banlist"]:
-	                if wait["blacklist"] == {}:
+            elif msg.text in ["Banlist"]:
+		if msg.from_ in admin: 
+			if wait["blacklist"] == {}:
 	                    cl.sendText(msg.to,"nothing")
 	                    ki.sendText(msg.to,"nothing")
 	                    kk.sendText(msg.to,"nothing")
