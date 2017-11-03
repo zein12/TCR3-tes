@@ -1946,8 +1946,8 @@ def bot(op):
 	            print op
 	
 	
-	    except Exception as error:
-	        print error
+	   except Exception as error:
+	       print error
 	
 	
 	def a2():
