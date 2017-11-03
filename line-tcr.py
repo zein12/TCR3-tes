@@ -1898,7 +1898,7 @@ def bot(op):
         	            kc.sendText(msg.to,"Blacklist emang pantas tuk di usir")
             elif msg.text in ["Clear"]:
 		if msg.from_ in admin:        
-	        if msg.toType == 2:
+		        if msg.toType == 2:
 	                    group = cl.getGroup(msg.to)
 	                    gMembMids = [contact.mid for contact in group.invitee]
 	                    for _mid in gMembMids:
