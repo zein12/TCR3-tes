@@ -1655,8 +1655,9 @@ def bot(op):
 	                                    k3.sendText(msg.to,"Sukses MJ")
 	                                except:
 	                                    ki.sendText(msg.to,"error")
-	            elif "Ban @" in msg.text:
-	                if msg.toType == 2:
+            elif "Ban @" in msg.text:
+		if msg.from_ in admin:
+			if msg.toType == 2:
 	                    print "[Ban]ok"
 	                    _name = msg.text.replace("Ban @","")
 	                    _nametarget = _name.rstrip('  ')
