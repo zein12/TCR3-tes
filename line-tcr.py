@@ -1326,7 +1326,7 @@ def bot(op):
 	                else:
 	                    if wait["lang"] == "JP":
 	                        cl.sendText(msg.to,"Can't be used outside the group")
-                    else:
+                    	else:
 	                        cl.sendText(msg.to,"Not for use less than group")
             elif msg.text in ["MJ2 gurl"]:
 		if msg.from_ in admin:
