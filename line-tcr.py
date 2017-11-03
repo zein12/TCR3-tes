@@ -539,7 +539,7 @@ def bot(op):
 		if msg.from_ in admin:                
 			midd = msg.text.replace("Kick ","")
 	                cl.kickoutFromGroup(msg.to,[midd])
-	     elif "MJ1 kick " in msg.text:
+            elif "MJ1 kick " in msg.text:
 		if msg.from_ in admin:	   
              		midd = msg.text.replace("MJ1 kick ","")
                 	ki.kickoutFromGroup(msg.to,[midd])
