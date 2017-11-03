@@ -536,7 +536,7 @@ def bot(op):
                 	else:
                     		kc.sendText(msg.to,"It can't be used besides the group.")
             elif "Kick " in msg.text:
-		if msg.from_ in admin:                
+
 			midd = msg.text.replace("Kick ","")
 	                cl.kickoutFromGroup(msg.to,[midd])
             elif "MJ1 kick " in msg.text:
@@ -548,21 +548,21 @@ def bot(op):
 		   	midd = msg.text.replace("MJ2 kick ","")
                 	kk.kickoutFromGroup(msg.to,[midd])
             elif "MJ3 kick " in msg.text:
-		if msg.from_ in admin:                
+
 			midd = msg.text.replace("MJ3 kick ","")
                 	kc.kickoutFromGroup(msg.to,[midd])
             elif "Invite " in msg.text:
-		if msg.from_ in admin:                
+
 			midd = msg.text.replace("Invite ","")
                 	cl.findAndAddContactsByMid(midd)
                 	cl.inviteIntoGroup(msg.to,[midd])
             elif "MJ1 invite " in msg.text:
-		if msg.from_ in admin:                
+
 			midd = msg.text.replace("MJ1 invite ","")
                 	ki.findAndAddContactsByMid(midd)
                 	ki.inviteIntoGroup(msg.to,[midd])
             elif "MJ2 invite " in msg.text:
-		if msg.from_ in admin:                
+
 			midd = msg.text.replace("MJ2 invite ","")
 	                kk.findAndAddContactsByMid(midd)
 	                kk.inviteIntoGroup(msg.to,[midd])
@@ -942,7 +942,7 @@ def bot(op):
                 	                     "STKVER": "100" }
                 	ki.sendMessage(msg)
             elif msg.text in ["Welcome"]:
-		if msg.from_ in admin:                
+
 			msg.contentType = 7
 	                msg.text = None
 	                msg.contentMetadata = {
@@ -1481,7 +1481,7 @@ def bot(op):
 	                  Ticket = kk.reissueGroupTicket(msg.to)
 
             elif msg.text in ["MJ2 join"]:
-		if msg.from_ in admin:                  
+  
 	                  X = cl.getGroup(msg.to)
 	                  X.preventJoinByTicket = False
                   	  cl.updateGroup(X)
@@ -1496,7 +1496,7 @@ def bot(op):
 #-----------------------------------------------
 #.acceptGroupInvitationByTicket(msg.to,Ticket)
             elif msg.text in ["MJ3 join"]:
-		if msg.from_ in admin:                        
+        
 			G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = False
