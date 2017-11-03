@@ -770,7 +770,7 @@ def bot(op):
 	                        kk.sendText(msg.to,"Can not be used outside the group")
 	                    else:
 	                        kk.sendText(msg.to,"Not for use less than group")
-	     elif msg.text in ["MJ3 curl","MJ3 link off"]:
+	   elif msg.text in ["MJ3 curl","MJ3 link off"]:
 		if msg.from_ in admin:        
 		        if msg.toType == 2:
 	                    X = kc.getGroup(msg.to)
