@@ -1118,7 +1118,7 @@ def bot(op):
 	                else: md+=" Contact : off\n"
 	                if wait["autoJoin"] == True: md+=" Auto join : on\n"
 	                else: md +=" Auto join : off\n"
-                if wait["autoCancel"]["on"] == True:md+=" Group cancel :" + str(wait["autoCancel"]["members"]) + "\n"
+               		if wait["autoCancel"]["on"] == True:md+=" Group cancel :" + str(wait["autoCancel"]["members"]) + "\n"
 	                else: md+= " Group cancel : off\n"
 	                if wait["leaveRoom"] == True: md+=" Auto leave : on\n"
 	                else: md+=" Auto leave : off\n"
