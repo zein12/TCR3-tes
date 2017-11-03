@@ -1498,15 +1498,15 @@ def bot(op):
             elif msg.text in ["MJ3 join"]:
 		if msg.from_ in admin:                        
 			G = cl.getGroup(msg.to)
-	                        ginfo = cl.getGroup(msg.to)
-	                        G.preventJoinByTicket = False
-	                        cl.updateGroup(G)
-	                        invsend = 0
-	                        Ticket = cl.reissueGroupTicket(msg.to)
-	                        kc.acceptGroupInvitationByTicket(msg.to,Ticket)
-	                        print "kicker ok"
-	                        G.preventJoinByTicket = True
-	                        kc.updateGroup(G)
+                        ginfo = cl.getGroup(msg.to)
+                        G.preventJoinByTicket = False
+                        cl.updateGroup(G)
+                        invsend = 0
+                        Ticket = cl.reissueGroupTicket(msg.to)
+                        kc.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        print "kicker ok"
+                        G.preventJoinByTicket = True
+                        kc.updateGroup(G)
 #-----------------------------------------------
             elif msg.text in ["Bye all"]:
 		if msg.from_ in admin:
