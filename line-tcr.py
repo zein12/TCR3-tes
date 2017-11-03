@@ -806,7 +806,7 @@ def bot(op):
 					group=cl.findGroupByTicket(ticket_id)
 					cl.acceptGroupInvitationByTicket(group.id,ticket_id)
 					cl.sendText(msg.to,"Sukses join ke grup %s" % str(group.name))
-             elif msg.text == "Ginfo":
+            elif msg.text == "Ginfo":
 		if msg.from_ in admin:            
 		    if msg.toType == 2:
 	                    ginfo = cl.getGroup(msg.to)
